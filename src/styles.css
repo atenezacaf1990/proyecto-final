@@ -1,0 +1,139 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #2d3748;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 60%, #4a5568 100%);
+  color: white;
+  padding: 2.5rem 2rem;
+}
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.avatar {
+  width: 90px; height: 90px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; font-weight: bold; color: white;
+  flex-shrink: 0;
+  border: 3px solid rgba(255,255,255,0.3);
+}
+.header-info h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+.titulo { color: #a0aec0; font-size: 1rem; margin-bottom: 0.8rem; }
+.contacto { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.9rem; color: #cbd5e0; }
+.contacto a { color: #90cdf4; text-decoration: none; }
+.contacto a:hover { color: white; }
+
+/* LAYOUT */
+main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+.contenedor { display: grid; grid-template-columns: 320px 1fr; gap: 1.5rem; }
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #667eea;
+}
+.card h2 {
+  font-size: 1.05rem;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.card p { color: #4a5568; font-size: 0.92rem; line-height: 1.6; }
+
+/* SKILLS */
+.skills { list-style: none; }
+.skills li { margin-bottom: 0.8rem; }
+.skill-name { font-size: 0.88rem; color: #4a5568; display: block; margin-bottom: 3px; }
+.bar { background: #e2e8f0; border-radius: 10px; height: 8px; }
+.fill { background: linear-gradient(90deg, #667eea, #764ba2); height: 8px; border-radius: 10px; transition: width 1s ease; }
+
+/* PROYECTOS */
+.proyectos { list-style: none; }
+.proyectos li { padding: 0.6rem 0; border-bottom: 1px solid #f7fafc; }
+.proyectos li:last-child { border-bottom: none; }
+.proyectos strong { display: block; color: #2b6cb0; font-size: 0.9rem; }
+.proyectos span { font-size: 0.82rem; color: #718096; }
+
+/* IDIOMAS */
+.idiomas { list-style: none; }
+.idiomas li { padding: 0.4rem 0; color: #4a5568; font-size: 0.92rem; }
+
+/* TIMELINE */
+.timeline { }
+.item { display: flex; gap: 1rem; margin-bottom: 1.2rem; }
+.fecha {
+  min-width: 90px; font-size: 0.78rem;
+  color: white; background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 6px; padding: 4px 8px;
+  text-align: center; height: fit-content;
+  font-weight: bold;
+}
+.detalle strong { display: block; color: #1a202c; font-size: 0.95rem; }
+.detalle span { display: block; color: #667eea; font-size: 0.85rem; margin: 2px 0 4px; }
+.detalle p { font-size: 0.85rem; color: #718096; }
+
+/* BADGES */
+.badges { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.badge {
+  padding: 5px 12px; border-radius: 20px;
+  font-size: 0.82rem; font-weight: 600;
+  color: white;
+}
+.git { background: #f05133; }
+.github { background: #1a202c; }
+.actions { background: #2088ff; }
+.docker { background: #0db7ed; }
+.compose { background: #0a9de3; }
+.ghcr { background: #6e40c9; }
+.pages { background: #24292e; }
+.nginx { background: #009639; }
+.linux { background: #fcc624; color: #333; }
+.wsl { background: #0078d7; }
+
+/* PIPELINE */
+.pipeline { border-left-color: #48bb78; }
+.pipeline-steps {
+  display: flex; align-items: center;
+  justify-content: center; flex-wrap: wrap; gap: 0.5rem;
+}
+.step {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white; border-radius: 10px;
+  padding: 0.8rem 1rem; text-align: center;
+  font-size: 0.82rem; font-weight: 600; min-width: 70px;
+}
+.arrow { font-size: 1.5rem; color: #a0aec0; }
+
+/* FOOTER */
+footer {
+  background: #1a202c; color: #a0aec0;
+  text-align: center; padding: 1.5rem;
+  font-size: 0.88rem; margin-top: 2rem;
+}
+footer a { color: #90cdf4; text-decoration: none; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contenedor { grid-template-columns: 1fr; }
+  .header-content { flex-direction: column; text-align: center; }
+  .contacto { justify-content: center; }
+  .pipeline-steps { gap: 0.3rem; }
+  .arrow { display: none; }
+}

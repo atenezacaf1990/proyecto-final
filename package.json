@@ -1,0 +1,12 @@
+{
+  "name": "proyecto-final-devops",
+  "version": "1.0.0",
+  "description": "CV Online - Proyecto Final DevOps - Marcos Andres Tenezaca Faican",
+  "scripts": {
+    "test": "echo 'Tests OK'",
+    "start": "python3 -m http.server 8000 --directory src"
+  },
+  "keywords": ["devops", "docker", "github-actions", "cv"],
+  "author": "Marcos Andres Tenezaca Faican",
+  "license": "MIT"
+}

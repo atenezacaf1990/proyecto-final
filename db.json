@@ -1,0 +1,14 @@
+{
+  "proyectos": [
+    { "id": 1, "nombre": "retail-app", "descripcion": "Pipeline CI/CD + GitHub Pages" },
+    { "id": 2, "nombre": "mi-app-docker", "descripcion": "Imagen Docker en GHCR" },
+    { "id": 3, "nombre": "mi-stack-compose", "descripcion": "Stack Docker Compose" },
+    { "id": 4, "nombre": "github-devops-practice", "descripcion": "Buenas prácticas Git" }
+  ],
+  "habilidades": [
+    { "id": 1, "nombre": "Git / GitHub", "nivel": 90 },
+    { "id": 2, "nombre": "Docker", "nivel": 80 },
+    { "id": 3, "nombre": "GitHub Actions", "nivel": 85 },
+    { "id": 4, "nombre": "Linux / WSL", "nivel": 75 }
+  ]
+}
